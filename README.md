@@ -1,3 +1,9 @@
+# The Sofa Website
+
+The aim was to recreate a simple website using ReactJS with node-sass, react-router-dom and react-router. It is a mock website for a fake company very interested in sofas apparently...
+![home](public/assets/Screenshot_LeSofa_home.png)
+![about](public/assets/Screenshot_LeSofa_about.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
