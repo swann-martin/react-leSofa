@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  padding: 2rem;
+  font-weight: bold;
+
+  h2 {
+    height: 40px;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
+
+  ul {
+    display: flex;
+    li {
+      margin-left: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: solid 2px transparent;
+      transition: all 0.4s ease-in;
+      &:hover {
+        border-bottom: solid 2px $-color4;
+      }
+    }
+  }
+
+  .nav-active {
+    color: $-color4;
+  }
+}
