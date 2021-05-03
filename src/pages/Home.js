@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
           <img src="./assets/sofa.webp" alt="sofa1" />
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

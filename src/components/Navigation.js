@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <h2>
-        <img src="./assets/manjaro.svg" alt="logo" />
+        <img src="./assets/logo.svg" alt="logo" />
       </h2>
       <ul>
         <NavLink to="/home" className="nav-hover" activeClassName="nav-active">
@@ -13,6 +13,13 @@ const Navigation = () => {
         </NavLink>
         <NavLink to="/about" className="nav-hover" activeClassName="nav-active">
           <li>A propos</li>
+        </NavLink>
+        <NavLink
+          to="/products"
+          className="nav-hover"
+          activeClassName="nav-active"
+        >
+          <li>les Sofas</li>
         </NavLink>
         <NavLink
           to="/contact"

@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
 import Navigation from "../components/Navigation";
 
 const Contact = () => {
@@ -6,6 +7,9 @@ const Contact = () => {
     <div className="contact">
       <Navigation />
       <h1>ContactForm</h1>
+      <section>
+        <ContactForm />
+      </section>
     </div>
   );
 };
