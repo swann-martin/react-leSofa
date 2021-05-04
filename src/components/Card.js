@@ -1,23 +1,22 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
+  const { sofa } = props;
   return (
-    <div className="card">
-      <div className="container">
-        <div className="img-container">
-          <img src="./assets/sofa.webp" alt="sofa" />
-        </div>
-        <div className="text">
-          <h2>nom du modèle</h2>
-          <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            saepe esse ipsum cupiditate praesentium voluptatum impedit sequi,
-            sint ducimus quidem officia! Odio libero quibusdam quod iure
-            aliquid, earum praesentium expedita.
-          </p>
-        </div>
+    <li className="card">
+      <img src={sofa.img} alt="sofa" />
+      <div className="data-container">
+        <ul>
+          <li>
+            <span>Modèle :</span> {sofa.model}
+          </li>
+          <li>
+            <span>Prix :</span> {sofa.price}
+          </li>
+          <li className="description">"{sofa.description}"</li>
+        </ul>
       </div>
-    </div>
+    </li>
   );
 };
 

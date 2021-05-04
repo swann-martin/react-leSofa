@@ -1,7 +1,13 @@
 @import "./settings";
+
+// pages
 @import "./pages/home";
 @import "./pages/about";
+@import "./pages/products";
 @import "./pages/contact";
+
+// components
 @import "./components/navigation";
-@import "./components/footer";
+@import "./components/card";
 @import "./components/contactForm";
+@import "./components/footer";
