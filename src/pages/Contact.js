@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
       <section>
         <ContactForm />
       </section>
+      <Footer />
     </div>
   );
 };

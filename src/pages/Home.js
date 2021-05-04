@@ -8,7 +8,10 @@ const Home = () => {
       <h1>Bienvenue sur le site du canapé</h1>
       <section>
         <div className="img-container">
-          <img src="./assets/sofa.webp" alt="sofa1" />
+          <a href={"/products"}>
+            <img src="./assets/sofa.webp" alt="sofa1" />
+            <h2>Voir nos produits</h2>
+          </a>
         </div>
       </section>
       <Footer />

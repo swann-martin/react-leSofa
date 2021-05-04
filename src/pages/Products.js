@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import { sofas } from "../data/ListOfSofas";
 
@@ -15,6 +16,7 @@ const Products = () => {
           ))}
         </ul>
       </section>
+      <Footer />
     </div>
   );
 };
