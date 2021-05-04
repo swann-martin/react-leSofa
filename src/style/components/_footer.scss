@@ -1,3 +1,14 @@
 footer {
-  text-align: center;
+  margin: 1rem auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    a {
+      margin-left: 2rem;
+    }
+  }
 }

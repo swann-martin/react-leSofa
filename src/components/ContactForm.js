@@ -10,7 +10,7 @@ const ContactForm = () => {
             <input type="text" id="firstName" name="firstName" />
           </div>
           <div>
-            <label htmlFor="lastName">nom</label>
+            <label htmlFor="lastName">Nom</label>
             <input type="text" id="lastName" name="lastName" />
           </div>
         </div>

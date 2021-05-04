@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <Navigation />
-      <h1>A propos</h1>
+      <h1>À propos</h1>
       <section>
         <div className="about-img-container">
           <img src="./assets/sofa2.webp" alt="sofa2" />

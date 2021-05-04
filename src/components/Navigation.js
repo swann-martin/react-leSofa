@@ -4,9 +4,11 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <h2>
-        <img src="./assets/logo.svg" alt="logo" />
-      </h2>
+      <NavLink to="/home" className="nav-hover" activeClassName="nav-active">
+        <h2>
+          <img src="./assets/logo.svg" alt="logo" />
+        </h2>
+      </NavLink>
       <ul>
         <NavLink to="/home" className="nav-hover" activeClassName="nav-active">
           <li>Home</li>
