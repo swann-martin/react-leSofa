@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-leSofa/static/css/main.c2b47860.chunk.css",
-    "main.js": "/react-leSofa/static/js/main.3920b846.chunk.js",
-    "main.js.map": "/react-leSofa/static/js/main.3920b846.chunk.js.map",
+    "main.js": "/react-leSofa/static/js/main.23664820.chunk.js",
+    "main.js.map": "/react-leSofa/static/js/main.23664820.chunk.js.map",
     "runtime-main.js": "/react-leSofa/static/js/runtime-main.1ec7087f.js",
     "runtime-main.js.map": "/react-leSofa/static/js/runtime-main.1ec7087f.js.map",
     "static/js/2.cf5d020f.chunk.js": "/react-leSofa/static/js/2.cf5d020f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.1ec7087f.js",
     "static/js/2.cf5d020f.chunk.js",
     "static/css/main.c2b47860.chunk.css",
-    "static/js/main.3920b846.chunk.js"
+    "static/js/main.23664820.chunk.js"
   ]
 }
