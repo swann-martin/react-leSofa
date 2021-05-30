@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/swann-martin/react-leSofa/static/css/main.c2b47860.chunk.css",
-    "main.js": "/swann-martin/react-leSofa/static/js/main.40747b79.chunk.js",
-    "main.js.map": "/swann-martin/react-leSofa/static/js/main.40747b79.chunk.js.map",
+    "main.js": "/swann-martin/react-leSofa/static/js/main.3920b846.chunk.js",
+    "main.js.map": "/swann-martin/react-leSofa/static/js/main.3920b846.chunk.js.map",
     "runtime-main.js": "/swann-martin/react-leSofa/static/js/runtime-main.8b3bf058.js",
     "runtime-main.js.map": "/swann-martin/react-leSofa/static/js/runtime-main.8b3bf058.js.map",
-    "static/js/2.f20c100a.chunk.js": "/swann-martin/react-leSofa/static/js/2.f20c100a.chunk.js",
-    "static/js/2.f20c100a.chunk.js.map": "/swann-martin/react-leSofa/static/js/2.f20c100a.chunk.js.map",
+    "static/js/2.cf5d020f.chunk.js": "/swann-martin/react-leSofa/static/js/2.cf5d020f.chunk.js",
+    "static/js/2.cf5d020f.chunk.js.map": "/swann-martin/react-leSofa/static/js/2.cf5d020f.chunk.js.map",
     "index.html": "/swann-martin/react-leSofa/index.html",
     "static/css/main.c2b47860.chunk.css.map": "/swann-martin/react-leSofa/static/css/main.c2b47860.chunk.css.map",
-    "static/js/2.f20c100a.chunk.js.LICENSE.txt": "/swann-martin/react-leSofa/static/js/2.f20c100a.chunk.js.LICENSE.txt"
+    "static/js/2.cf5d020f.chunk.js.LICENSE.txt": "/swann-martin/react-leSofa/static/js/2.cf5d020f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8b3bf058.js",
-    "static/js/2.f20c100a.chunk.js",
+    "static/js/2.cf5d020f.chunk.js",
     "static/css/main.c2b47860.chunk.css",
-    "static/js/main.40747b79.chunk.js"
+    "static/js/main.3920b846.chunk.js"
   ]
 }
