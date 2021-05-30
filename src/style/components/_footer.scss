@@ -11,4 +11,10 @@ footer {
       margin-left: 2rem;
     }
   }
+  a:hover {
+    color: $-color4;
+  }
+  @media screen and (max: 700px) {
+    display: block;
+  }
 }
