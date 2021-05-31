@@ -45,15 +45,16 @@ export default function ContactUs() {
           name="user_email"
           placeholder="votre-email@exemple.com"
         />
-        <label>Message</label>
       </div>
-
-      <textarea
-        name="message"
-        placeholder="Ecrivez ici ce que vous souhaitez nous dire..."
-        cols="30"
-        rows="10"
-      />
+      <div>
+        <label>Message</label>
+        <textarea
+          name="message"
+          placeholder="Ecrivez ici ce que vous souhaitez nous dire..."
+          cols="30"
+          rows="10"
+        />
+      </div>
       <div>
         <input type="submit" value="Send" className="btn" />
       </div>

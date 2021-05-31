@@ -19,7 +19,9 @@ const ContactForm = () => {
           <label htmlFor="email">Votre email</label>
           <input type="email" id="email" name="email" />
         </div>
-        <textarea name="text" id=""></textarea>
+        <div>
+          <textarea name="text" id=""></textarea>
+        </div>
         <div>
           <a href="#!" className="btn">
             Envoyer
