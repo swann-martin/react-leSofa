@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import homePic from '../assets/sofa.webp';
+
 const Home = () => {
   return (
     <div className="home">
@@ -9,7 +11,7 @@ const Home = () => {
       <section>
         <div className="img-container">
           <a href={"/products"}>
-            <img src="./assets/sofa.webp" alt="sofa1" />
+            <img src={homePic} alt="sofa1" />
             <h2>Voir nos produits</h2>
           </a>
         </div>
