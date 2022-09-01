@@ -1,12 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from '../assets/apple-touch-icon.png';
 
 const Navigation = () => {
   return (
     <nav className="navigation">
       <NavLink to="/home" className="nav-hover" activeClassName="nav-active">
         <h2>
-          <img src="./assets/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </h2>
       </NavLink>
       <ul>
