@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import { Sofa } from '../data/ListOfSofas';
 
-const Card = (props) => {
+const Card = (props: { sofa: Sofa }) => {
   const { sofa } = props;
   return (
     <li className="card">
@@ -15,7 +16,7 @@ const Card = (props) => {
           </li>
           <li className="description">"{sofa.description}"</li>
           <li>
-            <a href={"/contact"} className="btn">
+            <a href={'/contact'} className="btn">
               Voir le sofa
             </a>
           </li>
