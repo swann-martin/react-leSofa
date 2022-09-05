@@ -1,15 +1,20 @@
 .details {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  header {
+  &-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    min-width: 100%;
+    padding: 2rem;
   }
 
   &-title {
@@ -19,11 +24,14 @@
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;
     text-transform: capitalize;
+    margin-left: 1rem;
   }
+
   &-infos {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 
   &-description {

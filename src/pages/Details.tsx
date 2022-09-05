@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Sofa, sofas } from '../data/ListOfSofas';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Navigation from '../components/Navigation';
 
 const Details = () => {
   const params: { id: string } = useParams();
@@ -23,13 +24,14 @@ const Details = () => {
 
   return (
     <div className="details">
+      <Navigation />
       {!!sofa ? (
-        <div>
-          <header>
-            <h2 className="details-title">{sofa.model}</h2>
+        <div className="details-main">
+          <header className="details-header">
             <Link to="/products" className="details-back">
-              <ArrowBackIcon />
+              <ArrowBackIcon className="details-arrow" />
             </Link>
+            <h2 className="details-title">{sofa.model}</h2>
           </header>
           <div className="details-img">
             <img src={sofa.img} alt="sofa" />
