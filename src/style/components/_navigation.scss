@@ -1,24 +1,37 @@
-.navigation {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: whitesmoke;
   padding: 2rem;
   font-weight: bold;
-
-  h2 {
-    height: 40px;
-    overflow: hidden;
-    img {
-      height: 100%;
+  max-height: 2rem;
+  &-logo {
+    max-height: 40px;
+  }
+  &-list {
+    align-items: center;
+    background-color: rgba($color: $-color1, $alpha: 0.8);
+    border-radius: 20px;
+    @media screen and (max-width: 600px) {
+      align-items: flex-start;
+      li {
+        margin-bottom: 0.25rem;
+      }
     }
   }
-
   ul {
     display: flex;
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
     li {
       margin-left: 2rem;
-      padding-bottom: 0.5rem;
       border-bottom: solid 2px transparent;
       transition: all 0.4s ease-in;
       &:hover {

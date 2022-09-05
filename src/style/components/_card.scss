@@ -1,6 +1,6 @@
 .card {
   width: 20rem;
-  height: 20rem;
+  min-height: 20rem;
   overflow: hidden;
   position: relative;
   box-shadow: rgba($color: #000000, $alpha: 0.5);
@@ -34,7 +34,7 @@
       color: $-color5;
       z-index: 20;
       &:after {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         position: absolute;
@@ -67,5 +67,10 @@
         }
       }
     }
+  }
+  &-popup {
+    background-color: red;
+    height: 5rem;
+    width: 5rem;
   }
 }

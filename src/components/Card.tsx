@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Sofa } from '../data/ListOfSofas';
 
 const Card = (props: { sofa: Sofa }) => {
   const { sofa } = props;
   return (
-    <li className="card">
+    <Link className="card" to={`/details/${sofa.id}`}>
       <img src={sofa.img} alt="sofa" />
       <div className="data-container">
         <ul>
@@ -16,13 +17,13 @@ const Card = (props: { sofa: Sofa }) => {
           </li>
           <li className="description">"{sofa.description}"</li>
           <li>
-            <a href={'/contact'} className="btn">
+            <Link to={`/details/${sofa.id}`} className="btn">
               Voir le sofa
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
-    </li>
+    </Link>
   );
 };
 

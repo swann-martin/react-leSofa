@@ -8,8 +8,8 @@
   text-decoration: none;
 }
 
-$-font1: "Courgette", cursive;
-$-font2: "Sacramento", cursive;
+$-font1: 'Courgette', cursive;
+$-font2: 'Sacramento', cursive;
 
 $-color1: #003844;
 $-color2: #006c67;
@@ -19,13 +19,19 @@ $-color5: #ffebc6;
 $black: #333;
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: $-color1;
   min-height: 100vh;
   color: $-color5;
 }
 
+img {
+  max-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
 .contact,
 .home,
 .products,
