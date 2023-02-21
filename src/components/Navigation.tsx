@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/apple-touch-icon.png';
 import { Transition } from '@headlessui/react';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import CloseIcon from '@mui/icons-material/Close';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

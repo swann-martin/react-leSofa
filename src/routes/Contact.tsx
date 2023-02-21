@@ -1,6 +1,4 @@
 import React from 'react';
-
-import ContactForm from '../components/ContactForm';
 import FormComponent from '../components/FormComponent';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
