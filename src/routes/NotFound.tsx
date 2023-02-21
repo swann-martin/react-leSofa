@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="not-found">
+    <div className="not-found bg-main-bg">
       <h1>Error 404</h1>
     </div>
   );
