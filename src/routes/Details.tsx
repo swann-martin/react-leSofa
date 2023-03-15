@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { SofaType, sofas } from '../data/ListOfSofas';
-import Navigation from '../components/Navigation';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import back from '../assets/back-arrow.svg';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { SofaType, sofas } from "../data/ListOfSofas";
+import Navigation from "../components/Navigation";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import back from "../assets/back-arrow.svg";
 
 const Details = () => {
   const params = useParams();
 
   const [sofa, setSofa] = useState<SofaType | undefined>();
-  const [id, setId] = useState<string>('');
+  const [id, setId] = useState<string>("");
 
   useEffect(() => {
     if (!!params?.id) {
       setId(params.id);
       const foundSofa = sofas.find((sofa) => params.id === sofa.id);
-      console.log('foundSofa : ', foundSofa);
+      console.log("foundSofa : ", foundSofa);
       if (foundSofa !== undefined) {
         setSofa(foundSofa);
       }
@@ -99,6 +99,13 @@ const Details = () => {
                       {`#${h}`}
                     </a>
                   ))}
+                <div className="py-1 flex ml-auto mr-2 mt-6 bg-color-tertiary border border-color-tertiary  hover:border-main-bg w-1/2 justify-center items-center btn cursor-pointer rounded-xl text-center text-white ">
+                  <img
+                    src="/assets/icons/shopping-cart.svg"
+                    alt="shopping-cart"
+                  />
+                  <span className="pl-2">Buy</span>
+                </div>
               </div>
             </div>
           </div>
