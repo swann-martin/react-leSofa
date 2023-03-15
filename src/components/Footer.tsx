@@ -58,7 +58,7 @@ const Footer = () => {
               <img
                 width={24}
                 height={24}
-                src={`public/assets/icons/${link.icon}`}
+                src={`src/assets/icons/${link.icon}`}
                 alt={link.label}
               />
             </a>
