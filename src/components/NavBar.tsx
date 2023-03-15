@@ -5,27 +5,27 @@ import logo from '../assets/apple-touch-icon.png';
 
 export const NavLinks = [
   {
-    title: 'home',
-    href: '/',
+    title: 'Home',
+    href: '/'
   },
   {
-    title: 'about',
-    href: '/about',
+    title: 'Sofas',
+    href: '/products'
   },
   {
-    title: 'products',
-    href: '/products',
+    title: 'About',
+    href: '/about'
   },
   {
-    title: 'contact',
-    href: '/contact',
-  },
+    title: 'Contact',
+    href: '/contact'
+  }
 ];
 
 const NavBar = () => {
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '-100%' },
+    closed: { opacity: 0, x: '-100%' }
   };
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   return (
@@ -170,7 +170,7 @@ const NavBar = () => {
                     {title}
                   </NavLink>
                 </div>
-              ),
+              )
             )}
           </div>
         </div>

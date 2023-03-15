@@ -7,12 +7,11 @@ import NavBar from '../components/NavBar';
 
 const Home = () => {
   const title = "Welcome to Sofas' World";
-  const subtitle =
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique obcaecati illum mollitia.';
+  const subtitle = 'Everybody should be able rest on sofas.';
 
-  const action = 'View our products';
+  const action = 'View our Sofas';
   return (
-    <div className="home bg-main-bg h-screen flex-col flex justify-between work-sans leading-normal text-base tracking-normal ">
+    <div className="home bg-main-bg min-h-screen flex-col flex justify-between work-sans leading-normal text-base tracking-normal ">
       <NavBar />
       <div className="container mx-auto">
         <section>
