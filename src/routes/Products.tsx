@@ -20,8 +20,8 @@ const Products = () => {
             ))}
           </ul>
         </section>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -26,7 +26,7 @@ export const NavLinks = [
 const NavBar = () => {
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '-100%' }
+    closed: { opacity: 0, x: '100%' }
   };
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   return (
@@ -43,63 +43,13 @@ const NavBar = () => {
           </span>
         </NavLink>
         <div>
-          <button
-            onClick={() => {
-              setIsOpenMenu(!isOpenMenu);
-            }}
-            className="block p-2 bg-color-tertiary rounded-full md:hidden"
-          >
-            {isOpenMenu ? (
-              <span className="block w-6 h-6 font-bold text-white cursor-pointer md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40 40"
-                  enable-background="new 0 0 40 40"
-                >
-                  <line
-                    x1="15"
-                    y1="15"
-                    x2="25"
-                    y2="25"
-                    stroke="#fff"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                  ></line>
-                  <line
-                    x1="25"
-                    y1="15"
-                    x2="15"
-                    y2="25"
-                    stroke="#fff"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                  ></line>
-                  <circle
-                    className="circle"
-                    cx="20"
-                    cy="20"
-                    r="19"
-                    opacity="0"
-                    stroke="#000"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    fill="none"
-                  ></circle>
-                  <path
-                    d="M20 1c10.45 0 19 8.55 19 19s-8.55 19-19 19-19-8.55-19-19 8.55-19 19-19z"
-                    className="progress"
-                    stroke="#fff"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    fill="none"
-                  ></path>
-                </svg>
-              </span>
-            ) : (
+          {!isOpenMenu && (
+            <button
+              onClick={() => {
+                setIsOpenMenu(!isOpenMenu);
+              }}
+              className="block p-2 bg-color-tertiary rounded-full md:hidden"
+            >
               <svg
                 xmlns="<http://www.w3.org/2000/svg>"
                 id="menu-button"
@@ -115,10 +65,74 @@ const NavBar = () => {
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-            )}
-            <div className="absolute right-0 top-14 w-full md:hidden z-30">
+            </button>
+          )}
+
+          {isOpenMenu && (
+            <div
+              className="absolute min-h-screen right-0 top-0 w-full md:hidden z-30 backdrop-blur-sm bg-main-bg/50 flex flex-col"
+              onClick={() => {
+                setIsOpenMenu(!isOpenMenu);
+              }}
+            >
+              <button
+                onClick={() => {
+                  setIsOpenMenu(!isOpenMenu);
+                }}
+                className="ml-auto mt-4 mr-2 w-10 block p-2 bg-color-tertiary rounded-full md:hidden align-end"
+              >
+                <span className="block w-6 h-6 font-bold text-white cursor-pointer md:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 40 40"
+                    enable-background="new 0 0 40 40"
+                  >
+                    <line
+                      x1="15"
+                      y1="15"
+                      x2="25"
+                      y2="25"
+                      stroke="#fff"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                    ></line>
+                    <line
+                      x1="25"
+                      y1="15"
+                      x2="15"
+                      y2="25"
+                      stroke="#fff"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                    ></line>
+                    <circle
+                      className="circle"
+                      cx="20"
+                      cy="20"
+                      r="19"
+                      opacity="0"
+                      stroke="#000"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      fill="none"
+                    ></circle>
+                    <path
+                      d="M20 1c10.45 0 19 8.55 19 19s-8.55 19-19 19-19-8.55-19-19 8.55-19 19-19z"
+                      className="progress"
+                      stroke="#fff"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      fill="none"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
               <motion.div
-                className="flex flex-col flex-div backdrop-blur-sm items-justify"
+                className="flex flex-col flex-div items-justify"
                 animate={isOpenMenu ? 'open' : 'closed'}
                 variants={variants}
               >
@@ -140,7 +154,7 @@ const NavBar = () => {
                 ))}
               </motion.div>
             </div>
-          </button>
+          )}
         </div>
         <div className="hidden md:flex">
           <div className="flex items-center">

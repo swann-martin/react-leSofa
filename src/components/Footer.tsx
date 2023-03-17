@@ -24,8 +24,8 @@ const Footer = () => {
 
   return (
     // <footer className="flex flex-col-reverse md:flex-row justify-around md:justify-between text-white items-center md:items-end  w-full py-4">
-    <footer className="grid grid-cols-2 md:grid-cols-5 gap-4 rounded-lg text-white  md:items-end  w-full py-4">
-      <div className="flex justify-center items-center ">
+    <footer className="p-4 grid grid-cols-2 md:grid-cols-5 gap-4 rounded-lg text-white  md:items-end  w-full ">
+      <div className="flex  items-center ">
         <p className="text-white ">&copy; Swann Martin {year}</p>
       </div>
       <div className="flex justify-center items-center ">
@@ -33,7 +33,7 @@ const Footer = () => {
           CGU/CGV
         </a>
       </div>
-      <div className="flex justify-center items-center ">
+      <div className="flex  items-center ">
         <a
           className=" text-white hover:text-color-secondary"
           href={'./contact'}
