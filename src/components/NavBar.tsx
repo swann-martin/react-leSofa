@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/apple-touch-icon.png';
+// import logo from '../assets/apple-touch-icon.png';
+import logo from '../assets/logoSofa.png';
 
 export const NavLinks = [
   {
@@ -29,11 +30,11 @@ const NavBar = () => {
   };
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   return (
-    <nav className="flex sticky top-0 left-0 flex-wrap  items-center py-4 w-full z-2 sm:px-6 lg:px-8 bg-main-bg">
+    <nav className="flex sticky top-0 left-0 flex-wrap  items-center py-4 w-full z-2 md:px-6 px-2 lg:px-8 bg-main-bg">
       <div className="flex w-full  justify-between items-center">
-        <NavLink to={'/'} className="flex items-center">
+        <NavLink to={'/'} className="flex items-center h-10 ">
           <img
-            className="p-2 mx-auto mr-3 w-auto h-10 rounded-full bg-color-secondary sm:h-9"
+            className="mx-auto mr-3 sm:h-8 object-contain h-10 w-full"
             src={logo}
             alt="Company Logo"
           />
@@ -150,8 +151,8 @@ const NavBar = () => {
                     to={href}
                     className={`px-3 py-2 bg-white rounded-3xl font-bold transition-all ease-in-out delay-150 ${
                       window.location.pathname === href
-                        ? 'bg-color-tertiary  text-white'
-                        : 'hover:bg-color-tertiary hover:text-white'
+                        ? 'bg-color-secondary  text-white'
+                        : 'hover:bg-color-secondary hover:text-white'
                     }`}
                   >
                     {title}
@@ -161,10 +162,10 @@ const NavBar = () => {
                 <div key={`${title}${index}`}>
                   <NavLink
                     to={href}
-                    className={`mr-4 font-bold text-white hover:border-spacing-y-28 border-color-secondary transition-all ease-in-out delay-150 ${
+                    className={`mr-4 font-bold text-white hover:border-spacing-y-28 border-color-tertiary transition-all ease-in-out delay-150 ${
                       window.location.pathname === href
                         ? ' border-b-2 border-spacing-24'
-                        : 'hover:border-color-tertiary hover:border-b-2'
+                        : 'hover:border-color-secondary hover:border-b-2'
                     }`}
                   >
                     {title}

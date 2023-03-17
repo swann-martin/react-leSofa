@@ -7,7 +7,7 @@ const Card = (props: { sofa: SofaType }) => {
   return (
     <Link
       to={`/details/${sofa.id}`}
-      className="max-w-sm rounded bg-white overflow-hidden shadow-lg hover:bg-color-secondary hover:scale-105 transition-all duration-300 ease-in-out"
+      className=" rounded bg-white overflow-hidden shadow-lg hover:bg-color-secondary hover:scale-105 transition-all duration-300 ease-in-out"
     >
       <img className="w-full" src={sofa.img} alt="Image of a sofa" />
       <div className="px-6 py-4">

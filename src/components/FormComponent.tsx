@@ -38,7 +38,7 @@ export default function FormComponent() {
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div>
-              <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-color-secondary">
+              <span className="inline-block p-3 text-main-bg rounded-full  bg-color-tertiary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -67,7 +67,7 @@ export default function FormComponent() {
             </div>
 
             <div>
-              <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-color-secondary">
+              <span className="inline-block p-3 text-main-bg rounded-full  bg-color-tertiary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -101,7 +101,7 @@ export default function FormComponent() {
             </div>
 
             <div>
-              <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-color-secondary">
+              <span className="inline-block p-3 text-main-bg rounded-full  bg-color-tertiary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -135,7 +135,7 @@ export default function FormComponent() {
             </div>
 
             <div>
-              <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-color-secondary">
+              <span className="inline-block p-3 text-main-bg rounded-full  bg-color-tertiary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
