@@ -13,15 +13,15 @@ const Products = () => {
         <h1 className="text-center my-3 text-3xl text-color-secondary text-bold font-ugly">
           Our Sofas
         </h1>
-        <section className="container mx-auto">
-          <ul className="center grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+        <section className="container mx-auto ">
+          <ul className=" grid  grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {sofas.map((sofa) => (
               <Card sofa={sofa} key={sofa.model} />
             ))}
           </ul>
         </section>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
